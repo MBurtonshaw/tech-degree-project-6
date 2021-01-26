@@ -31,6 +31,10 @@ app.get("/unit_three", (req, res) => {
     res.render("unit_three");
 });
 
+app.post("/unit_three", (req, res) => {
+    res.render("unit_three");
+});
+
 app.get("/unit_four", (req, res) => {
     res.render("unit_four");
 });

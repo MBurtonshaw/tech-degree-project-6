@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Phrase Hunter
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(href='./static/css/unit_three.css' rel='stylesheet')
+    link(href='./static/css/animate.css' rel='stylesheet')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript')
+  body
+    .main-container
+      #overlay.start
+        h2.title Phrase Hunter
+        h1#game-over-message
+        button#btn__reset Start Game
+      #banner.section
+        h2.header Phrase Hunter
+      #phrase.section
+        ul
+      #qwerty.section
+        .keyrow
+          button.key q
+          button.key w
+          button.key e
+          button.key r
+          button.key t
+          button.key y
+          button.key u
+          button.key i
+          button.key o
+          button.key p
+        .keyrow
+          button.key a
+          button.key s
+          button.key d
+          button.key f
+          button.key g
+          button.key h
+          button.key j
+          button.key k
+          button.key l
+        .keyrow
+          button.key z
+          button.key x
+          button.key c
+          button.key v
+          button.key b
+          button.key n
+          button.key m
+      #scoreboard.section
+        ol
+          li.tries
+            img(src='./static/img/liveHeart.png' alt='Heart Icon' height='35' width='30')
+          li.tries
+            img(src='./static/img/liveHeart.png' alt='Heart Icon' height='35' width='30')
+          li.tries
+            img(src='./static/img/liveHeart.png' alt='Heart Icon' height='35' width='30')
+          li.tries
+            img(src='./static/img/liveHeart.png' alt='Heart Icon' height='35' width='30')
+          li.tries
+            img(src='./static/img/liveHeart.png' alt='Heart Icon' height='35' width='30')
+    script(type='text/javascript' src='./static/js/Phrase.js')
+    script(type='text/javascript' src='./static/js/Game.js')
+    script(type='text/javascript' src='./static/js/unit_four.js')
