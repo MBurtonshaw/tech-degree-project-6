@@ -4,7 +4,7 @@ html(lang="en" dir="ltr")
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
+    title Burtonshaw Portfolio
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
@@ -14,25 +14,21 @@ html(lang="en" dir="ltr")
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='https://placehold.it/550x350', alt='')
+          img.thumbnail(src='/static/img/ProfilePhoto.jpg', alt='Profile photo of a bald man with glasses and a red beard')
         .dev-intro-box
 
-          //- Replace with your name
-          h5 Name
+          h5 Matthew Burtonshaw
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
-          p Description
+          p From working on a farm to working with the DOM; I am a full-stack developer in training with a penchant for functional design and a growing curiosity toward web 3.0
 
-          //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
-          span Name
+          span Matthew Burtonshaw
 
       block content
 
