@@ -7,10 +7,10 @@
                     "id": 0,
                     "project_name": "Random Quote Generator",
                     "description": "Click the button to generate a random quote from the list",
-                    "technologies": ["HTML, CSS, JS"],
+                    "technologies": ["HTML", "CSS", "JS"],
                     "live_link": "/projects/0",
                     "github_link": "https://github.com/MBurtonshaw/techdegree-project-1",
-                    "image_urls": ["img/p1_1, img/p1_2, img/p1_3"]
+                    "image_urls": ["/img/p1_1.png", "/img/p1_2.png", "/img/p1_3.png"]
                 },
                 {
                     "id": 1,
@@ -19,7 +19,7 @@
                     "technologies": ["HTML", "CSS", "JS"],
                     "live_link": "/projects/1",
                     "github_link": "https://github.com/MBurtonshaw/techdegree-project-2",
-                    "image_urls": ["img/p2_1", "img/p2_2", "img/p2_3"]
+                    "image_urls": ["/img/p2_1.png", "/img/p2_2.png", "/img/p2_3.png"]
                 },
                 {
                     "id": 2,
@@ -28,7 +28,7 @@
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
                     "live_link": "/projects/2",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-3",
-                    "image_urls": ["img/p3_1, img/p3_2, img/p3_3, img/p3_4"]
+                    "image_urls": ["/img/p3_1.png", "/img/p3_2.png", "/img/p3_3.png", "/img/p3_4.png"]
                 },
                 {
                     "id": 3,
@@ -37,7 +37,7 @@
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
                     "live_link": "/projects/3",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-4",
-                    "image_urls": ["img/p4_1", "img/p4_2", "img/p4_3"]
+                    "image_urls": ["/img/p4_1.png", "/img/p4_2.png", "/img/p4_3.png"]
                 },
                 {
                     "id": 4,
@@ -46,7 +46,7 @@
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
                     "live_link": "/projects/4",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-5",
-                    "image_urls": ["img/p5_1", "img/p5_2", "img/p5_3", "img/p5_4"]
+                    "image_urls": ["/img/p5_1.png", "/img/p5_2.png", "/img/p5_3.png", "/img/p5_4.png"]
                 },
                 {
                     "id": 5,
@@ -55,7 +55,7 @@
                     "technologies": ["HTML", "CSS", "JS", "JQuery", "PHP"],
                     "live_link": "/projects/5",
                     "github_link": "https://github.com/MBurtonshaw/cloakanddaggercle",
-                    "image_urls": ["img/p6_1", "img/p6_2", "img/p6_3"]
+                    "image_urls": ["img/p6_1.png", "img/p6_2.png", "img/p6_3.png"]
                 },
                 {
                     "id": 6,
@@ -64,7 +64,7 @@
                     "technologies": ["HTML", "CSS", "JS", "JQuery", "Node.js", "Express", "Pug"],
                     "live_link": "/projects/6",
                     "github_link": "https://github.com/MBurtonshaw/cloakAndDaggerStatic",
-                    "image_urls": ["img/p7_1", "img/p7_2", "img/p7_3"]
+                    "image_urls": ["img/p7_1.png", "img/p7_2.png", "img/p7_3.png"]
             }
         ]
     }
