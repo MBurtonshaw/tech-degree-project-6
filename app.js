@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { data } = require("./data.json");
-const { projects } = { data };
+const { projects } = data;
 const bodyParser = require("body-parser");
 
 
@@ -21,12 +21,20 @@ app.get("/about", (req, res) => {
 
 app.get('/projects/:id', (req, res, next) => {
   // Log out home route handler indication
-    const { id } = req.params;
-    const project = projects[id];
-    res.render("project", { project });
+    const projectID = req.params.id;
+    const project = projects.find(({ id }) => id === +projectID);
+    if (project) {
+        res.render("project", {name: project.project_name, description: project.description, technologies: project.technologies, link1: project.live_link, link2: project.github_link, photos: project.image_urls}); 
+        } else {
+            const err = new Error();
+            res.status(404);
+            res.render("not-found");
+            next(err);
+        }
 });
 
 app.listen("3000", () => {
     console.log("running");
 });
 
+module.exports = app;
