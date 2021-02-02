@@ -21,7 +21,7 @@ block content
     each val in projects
         .cell
           a(href='/projects/' + val.id)
-            img.thumbnail(src= val.image_urls, alt='Thumbnail ' + val.project_name)
+            img.thumbnail(src= val.image_urls[0], alt='Thumbnail ' + val.project_name)
             h5 #{val.project_name}
             
 
