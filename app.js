@@ -24,7 +24,7 @@ app.get('/projects/:id', (req, res, next) => {
     const projectID = req.params.id;
     const project = projects.find(({ id }) => id === +projectID);
     if (project) {
-        res.render("project", {name: project.project_name, description: project.description, technologies: project.technologies, link1: project.live_link, link2: project.github_link, photos: project.image_urls}); 
+        res.render("project", {project}); 
         } else {
             const err = new Error();
             res.status(404);
