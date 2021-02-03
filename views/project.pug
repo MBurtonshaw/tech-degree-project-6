@@ -9,32 +9,31 @@ block content
   article.portfolio-projects
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
+            //all variables w dot notation are pulling key/value data from data.json
 
-        //- Use the info in your data file and the comments below to complete this template
+            h1= project.project_name
 
-        //- Use interpolation to dynamically add the project title
-        h1= project.project_name
-
-        //- Use interpolation to dynamically add the project description
-        p= project.description
+            p= project.description
         
       .project-tech-links-box.box
         h6 Technologies
-            //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
+
         ul
+        //using an "each" iterator to print all the values in project.technologies to an li item
         each val in project.technologies
             li= val
-        //- Add the href values to the links below
-        a.btn-link(href= project.live_link) Live Demo
-        a.btn-link(href= project.github_link) GitHub Repo
+        br
+        a.btn-link(target="_blank" href= project.live_link) Live Demo
+        a.btn-link(target="_blank" href= project.github_link) GitHub Repo
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-    
-    img.project-img(src= project.image_urls[0], alt='')
-    img.project-img(src= project.image_urls[1], alt='')
-    img.project-img(src= project.image_urls[2], alt='')
+    //using bracket notation to target the image_urls array within the object of the projects array that corresponds to the url id
+    img.project-img(src= project.image_urls[1], alt='Thumbnail picture for ' + project.project_name)
+    img.project-img(src= project.image_urls[2], alt='Screenshot of ' + project.project_name class="fade-in")
+    //conditional statement stating to load a third image if there is one to load
+    if project.image_urls[3]
+        img.project-img(src= project.image_urls[3], alt='Screenshot of ' + project.project_name class="fade-in")
 
     nav.nav
       a(href='/')
