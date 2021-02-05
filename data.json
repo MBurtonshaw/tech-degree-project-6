@@ -8,7 +8,7 @@
                     "project_name": "Random Quote Generator",
                     "description": "Click the button to generate a random quote from the list.",
                     "technologies": ["HTML", "CSS", "JS"],
-                    "live_link": "http://twopinesdevelopment.com/unit_1_project/unit_1.html",
+                    "live_link": "http://twopinesdevelopment.com/Unit_1_Project/unit_1.html",
                     "github_link": "https://github.com/MBurtonshaw/techdegree-project-1",
                     "image_urls": ["/static/img/p1_1.png", "/static/img/p1_2.png", "/static/img/p1_3.png"]
                 },
@@ -17,7 +17,7 @@
                     "project_name": "Student Search & Pagination",
                     "description": "Use the search function to find individual names, and click the page buttons at the bottom to switch between pages",
                     "technologies": ["HTML", "CSS", "JS"],
-                    "live_link": "http://twopinesdevelopment.com/unit_2_project/unit_2.html",
+                    "live_link": "http://twopinesdevelopment.com/Unit_2_Project/unit_2.html",
                     "github_link": "https://github.com/MBurtonshaw/techdegree-project-2",
                     "image_urls": ["/static/img/p2_1.png", "/static/img/p2_2.png", "/static/img/p2_3.png"]
                 },
@@ -26,7 +26,7 @@
                     "project_name": "Interactive Form",
                     "description": "This is the form validation project. To interact, fill out the form and submit when you're finished. The form will generate messages if any information is missing or in an incorrect format, add up the total cost for events, and cancel out overlapping choices. The form will not collect any actual information, this is for example purposes only. Upon submission the page will refresh.",
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
-                    "live_link": "http://twopinesdevelopment.com/unit_3_project/unit_3.html",
+                    "live_link": "http://twopinesdevelopment.com/Unit_3_Project/unit_3.html",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-3",
                     "image_urls": ["/static/img/p3_1.png", "/static/img/p3_2.png", "/static/img/p3_3.png", "/static/img/p3_4.png"]
                 },
@@ -35,7 +35,7 @@
                     "project_name": "Phrase Hunter",
                     "description": "This project is the Phrase Hunter Game. Use your keyboard or the keys onscreen to guess the phrases. Choose a letter and if it's part of one of the phrases, the corresponding letter will appear. If it's not part of a phrase you will lose 1 of 5 hearts.",
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
-                    "live_link": "http://twopinesdevelopment.com/unit_4_project/unit_4.html",
+                    "live_link": "http://twopinesdevelopment.com/Unit_4_Project/unit_4.html",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-4",
                     "image_urls": ["/static/img/p4_1.png", "/static/img/p4_2.png",  "/static/img/p4_5.png", "/static/img/p4_4.png", "/static/img/p4_3.png"]
                 },
@@ -44,7 +44,7 @@
                     "project_name": "Employee Directory",
                     "description": "Data is asynchronously loaded to the browser; use the dynamic search bar to filter results; click for a personalized modal window of the 'user'.",
                     "technologies": ["HTML", "CSS", "JS", "JQuery"],
-                    "live_link": "http://twopinesdevelopment.com/unit_5_project/unit_5.html",
+                    "live_link": "http://twopinesdevelopment.com/Unit_5_Project/unit_5.html",
                     "github_link": "https://github.com/MBurtonshaw/tech-degree-project-5",
                     "image_urls": ["/static/img/p5_1.png", "/static/img/p5_2.png", "/static/img/p5_3.png", "/static/img/p5_4.png"]
                 },
