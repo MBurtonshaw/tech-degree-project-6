@@ -23,6 +23,9 @@
   transform: none;
   visibility: visible;
 }
+.whoops {
+    text-align: center;
+}
 
 /*
 ---   Mobile optimization   ---
