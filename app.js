@@ -25,7 +25,7 @@ app.get("/about", (req, res) => {
 });
 
 //GET route based on the project id from data.json; renders project.pug with the "projects" object data
-app.get("/projects/:id", (req, res) => {
+app.get("/projects/:id", (req, res, next) => {
     //variable targeting the id in the url
     const projectID = req.params.id;
     //variable using .find to search through data.json for the id corresponding to the url id
@@ -35,8 +35,11 @@ app.get("/projects/:id", (req, res) => {
         res.render("project", { project });
     } else {
         //otherwise, throw a new 404 error and render not-found.pug
-        res.status(404);
-        res.render("not-found");
+        const err = new Error();
+        err.status = 404;
+        err.message = " ...you don't wanna go down that road";
+        res.render("not-found", {err});
+        next(err);
     }
 });
 
@@ -48,14 +51,27 @@ app.get("/error_demo", (req, res, next) => {
 
 //404 error handler
 app.use((req, res, next) => {
-    res.status(404).render("not-found", {msg: "You got a 404 error"});
-    console.log(err.status);
+    const err = new Error();
+    err.status = 404;
+    err.message = " ...you don't wanna go down that road";
+    res.status(404).render("not-found", {err});
+    next(err);
 });
 
 //500 error handler
 app.use((err, req, res, next) => {
-    res.status(500).render("error", { err });
-    console.log(err.message);
+    if (err) {
+        console.log("Global error handler has been called. ", err);
+        if (err.status === 404) {
+            err.message = " ...you don't wanna go down that road";
+            res.status(404).render("not-found", {err});
+        } else {
+            err.message = err.message || "Ooops!";
+            err.status = 500;
+            res.status(500).render("error", {err});
+
+        }
+    }
 });
 
 //local server
