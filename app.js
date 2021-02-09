@@ -29,7 +29,7 @@ app.get("/projects/:id", (req, res, next) => {
     //variable targeting the id in the url
     const projectID = req.params.id;
     //variable using .find to search through data.json for the id corresponding to the url id
-    const project = projects.find(({ id }) => id === +projectID);
+    const project = projects[req.params.id];
     //if that id exists, render project.pug with the project data for the project containing the corresponding id
     if (project) {
         res.render("project", { project });
@@ -61,7 +61,7 @@ app.use((err, req, res, next) => {
             res.status(404).render("not-found", {err});
         } else {
             err.message = err.message || "Ooops!";
-            err.status = 500;
+            err.status = err.status || 500;
             res.status(500).render("error", {err});
         }
     }
