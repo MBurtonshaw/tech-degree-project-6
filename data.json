@@ -51,7 +51,7 @@
                 {
                     "id": 5,
                     "project_name": "Cloak and Dagger Cocktail Lounge",
-                    "description": "A website I made for my friend's cocktail bar; menu is asynchronously loaded and can be navigated with the arrows onscreen; the contact page is written in PHP on the live version; installed an asynchronous plugin for a mailing list at the bottom of every page; optimized for different screen resolutions.",
+                    "description": "A website I made for my friend's cocktail bar; menu is asynchronously loaded and can be navigated with the arrows onscreen; the contact page is written in PHP; installed an asynchronous plugin for a mailing list at the bottom of every page; optimized for different screen resolutions.",
                     "technologies": ["HTML", "CSS", "JS", "JQuery", "PHP"],
                     "live_link": "http://cloakanddaggercle.com",
                     "github_link": "https://github.com/MBurtonshaw/cloakanddaggercle",
