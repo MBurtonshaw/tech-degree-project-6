@@ -34,12 +34,7 @@ app.get("/projects/:id", (req, res, next) => {
     if (project) {
         res.render("project", { project });
     } else {
-        //otherwise, throw a new 404 error and render not-found.pug
-        const err = new Error();
-        err.status = 404;
-        err.message = " ...you don't wanna go down that road";
-        res.render("not-found", {err});
-        next(err);
+        next();
     }
 });
 
@@ -54,7 +49,6 @@ app.use((req, res, next) => {
     const err = new Error();
     err.status = 404;
     err.message = " ...you don't wanna go down that road";
-    res.status(404).render("not-found", {err});
     next(err);
 });
 
@@ -69,7 +63,6 @@ app.use((err, req, res, next) => {
             err.message = err.message || "Ooops!";
             err.status = 500;
             res.status(500).render("error", {err});
-
         }
     }
 });
